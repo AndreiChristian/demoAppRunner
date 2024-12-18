@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
   res.send(`
     <html>
       <body style="font-family: Arial; text-align: center; background-color: #f0f0f0;">
-        <h1>Hello AWS App Runner! 🚀</h1>
+        <h1>Hello AWS App Runner Updated! 🚀</h1>
         <p>Deployed on: ${new Date().toLocaleString()}</p>
         <div style="margin-top: 20px; color: #666;">
           <small>Simple demo app for AWS App Runner</small>
