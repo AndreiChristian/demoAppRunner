@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 // Simple routes
 app.get('/', (req, res) => {
+  console.log("Index route")
   res.send(`
     <html>
       <body style="font-family: Arial; text-align: center; background-color: #f0f0f0;">
@@ -19,6 +20,7 @@ app.get('/', (req, res) => {
 
 // Health check endpoint
 app.get('/health', (req, res) => {
+  console.log("Health route")
   res.status(200).json({
     status: 'healthy',
     timestamp: new Date().toISOString()
@@ -27,6 +29,7 @@ app.get('/health', (req, res) => {
 
 // Random fun endpoints
 app.get('/quote', (req, res) => {
+  console.log("Quote route")
   const quotes = [
     "The future belongs to those who believe in the beauty of their dreams.",
     "Innovation distinguishes between a leader and a follower.",
